@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 88%;
+    --card: 0 0% 14.5%;
+    --card-foreground: 0 0% 88%;
+    --popover: 0 0% 14.5%;
+    --popover-foreground: 0 0% 88%;
+    --primary: 210 100% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 88%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 210 100% 42%;
+    --accent-foreground: 0 0% 88%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 88%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 210 100% 42%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
+
+/* Monaco Editor dark theme adjustments */
+.monaco-editor {
+  background-color: hsl(var(--background)) !important;
+}
+
+.monaco-editor .margin {
+  background-color: hsl(var(--card)) !important;
+}
