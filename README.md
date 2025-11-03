@@ -174,3 +174,13 @@ MIT © 2025 TigerCLI
 ---
 
 **Construit avec ❤️ par l'équipe TigerCLI**
+
+---
+
+## 🎯 Phase de Développement Actuelle
+
+**Branche**: `genspark_ai_developer`
+**Épique**: MVP - Fondations de l'IDE  
+**Status**: ✅ Complété
+
+Cette branche contient l'implémentation initiale de TigerCLI avec le design épuré selon les spécifications du livre blanc technique.
